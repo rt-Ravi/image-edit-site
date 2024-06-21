@@ -1,0 +1,53 @@
+extends base.pug
+
+block head
+    link(rel="stylesheet", href="/style/png_to_jpg.css")
+    link(rel="stylesheet", href="/style/load_s.css")
+    link(rel="stylesheet", href="/style/info.css")
+    title Convert PDF To Image - Free Service | ImagePlaySite
+    meta(name="robots", content="noindex, nofollow")
+    meta(name="description", content="convert pdf to image, Extract images from pdf with high quality and download zip files of extracted images - Free Service")
+    meta(name="keywords", content="extract images, pdf to image, zip file, convert pdf to image")
+    link(rel="canonical", href="https://www.imageplaysite.com/pdf-to-image")
+    meta(name="og:title", content="Convert PDF To Image - Free Service | ImagePlaySite")
+    meta(name="og:description", content="convert pdf to image, Extract images from pdf with high quality and download zip files of extracted images - Free Service")
+    meta(name="og:image", content="https://www.imageplaysite.com/images/pdf_to_img.png")
+    meta(name="og:type", content="website")
+    meta(name="og:url", content="https://www.imageplaysite.com/pdf-to-image")
+
+block content
+
+        main
+
+            div(class="anim-com")
+                div(class="first-e")
+                div(class="second-e")
+                div(class="third-e")
+
+            div(class="content-con") 
+                h1 PDF to Image
+                div(class="main-con")
+                    h2 Each PDF Should less than 50MB
+                    div(class="img-con")
+                        form(action="/pdf-to-image" id="pngform" method="POST" enctype="multipart/form-data")
+                            label(for="inputTag")
+                                p Select Image 
+                                img(src="images/camera.jpg", alt="camera icon" width="40")
+                                input(type="file" name="pdf" id="inputTag" size="11264")
+                                <span id="imageName"></span>
+                                button(type="submit") Convert
+                
+                div(class="information")
+
+                    p Page Information
+
+                    h2 On Imageplaysite you can easily Extrat Images from PDF.
+
+                    p PDF Size should not greater than 50MB.
+
+                    p You get ZIP file of Extracted images.
+
+                    p On Imageplaysite you can extract image from PDF with high quality.
+
+        script(src="javascript/pdf_to_image.js")
+

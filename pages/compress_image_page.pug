@@ -1,0 +1,151 @@
+extends base.pug
+
+block head
+    //- link(rel="stylesheet", href="/style/B_W_image.css")
+    link(rel="stylesheet", href="./style/compress_image.css")
+    link(rel="stylesheet", href="/style/load_s.css")
+    link(rel="stylesheet", href="/style/info.css")
+    title Compress Image Online - Free Service | ImagePlaySite
+    meta(name="robots", content="noindex, nofollow")
+
+
+block content
+
+        main
+
+            div(class="anim-com")
+                div(class="first-e")
+                div(class="second-e")
+                div(class="third-e")
+
+            <div id="main-div">
+                <h1>Compress Image</h1>
+                <div class="main-con">
+                    <div class="container">
+                        <div class="my-img-con">
+                            img(id="image" src=url alt="uncompressed_image")
+                        </div>
+                    </div>
+                    <div class="tool-con" id="tool-con">
+                        <div class="sticky-div"> 
+                            h2 Compress Image
+                            <div class="crop-btn-con">
+                                h2 Manual Compress
+                                div(class="manual-compress-con" id="compress-box")
+                                    div(class="span-con" id="span-con")
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span 
+                                        span
+                                    div(class="circle" id="compress-circle")
+                                
+                                input(type="number" class="value-con" name="com_val" id="value-con" value="100"  readonly)
+                                input(type="text" value=val name="imgt")
+                                button(type="submit" class="button" id="compress") Compress
+                                button(type="submit" class="button" id="low-compress") Low Compress
+                                button(type="submit" class="button" id="mid-compress") Recomanded Compress
+                                button(type="submit" class="button" id="extra-compress") Extra Compress
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        script(src="/javascript/compress_img.js")

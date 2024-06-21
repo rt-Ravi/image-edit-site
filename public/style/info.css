@@ -1,0 +1,32 @@
+
+div.information{
+    max-width: 500px;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+div.information :not(ul.info, ol.info){
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+div.information h2{
+    color: black;
+    font-weight: bold;
+}
+
+
+div.information a{
+    text-decoration: none;
+    display:block;
+    color: rgb(24, 145, 216);
+}
+
+.title-text{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+ul.info, ol.info{
+    margin: 0px 0px 0px 30px;
+}

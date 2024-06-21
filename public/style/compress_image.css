@@ -1,0 +1,235 @@
+
+div.pdf-down-btn-con{
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+div.pdf-down-btn-con :not(no){
+ margin: 10px 0px;
+}
+
+div.pdf-down-btn-con a{
+  text-decoration: none;
+  font-size: 2em;
+  background-color: #181717;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+div#main-div{
+  display: none;
+}
+
+h1.user{
+    text-align: center;
+    margin: 20px 50px;
+}
+
+div.main-con-user {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: 70% 30%;
+  /* grid-gap: 10px 20px; */
+}
+
+div.container {
+  /* border: 2px solid rgb(255, 255, 255); */
+  width: 500px;
+
+  margin: auto;
+}
+
+div.my-img-con {
+  /* border: 4px solid rgb(189, 54, 54); */
+    /* margin: 0px 40px; */
+    width: 500px;
+}
+
+img#image {
+  width: 100%;
+}
+
+.cropper-view-box {
+  outline: 0;
+  box-shadow: 0 0 0 1px #39f;
+}
+
+div.container h2 {
+  text-align: center;
+  margin: 20px 5px;
+  /* border: 1px solid firebrick; */
+}
+
+div.container h2 span{
+  float: right;
+  font-size: 1em;
+  display: none;
+  cursor: pointer;
+}
+
+div.tool-con {
+  /* border: 4px solid rgb(57, 230, 42); */
+  background-color: #181717;
+  color: white;
+  display: block;
+}
+
+div.sticky-div {
+  padding: 10px 0px;
+  position: sticky;
+  top: 0;
+}
+
+div.tool-con h2 {
+  text-align: center;
+}
+div.tool-con h2 span{
+  cursor: pointer;
+  display: none;
+}
+
+div.shape-con {
+  /* border: 1px solid gold; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div.shape-con span {
+  /* border: 1px solid rgb(70, 12, 231); */
+
+  font-size: 70px;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+div.shape-con span:hover{
+
+ color: gray;
+}
+
+div.crop-btn-con {
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+div.crop-btn-con button {
+    width: 100%;
+  padding: 5px 0px;
+  font-size: 2em;
+  margin: 20px 0px;
+}
+
+div.crop-btn-con div.manual-compress-con {
+    margin: 20px 0px;
+   position: relative;
+   background: linear-gradient(to right, rgb(247, 116, 116) 0%, white 0%);
+   -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+div.crop-btn-con div.manual-compress-con div.span-con {
+ display: flex;
+}
+
+
+div.crop-btn-con div.manual-compress-con  div.span-con span{
+ background-color: transparent;
+ width: 2px;
+ height: 10px;
+}
+
+div.crop-btn-con div.manual-compress-con div.circle{
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: rgb(255, 0, 0);
+  bottom: -100%;
+  left: 0;
+ }
+
+ input.value-con{
+  border: 2px solid white;
+  width: 20px;
+  padding: 4px;
+  margin-right: 4px;
+  text-align: center;
+  margin: auto;
+  border: none;
+  outline: none;
+ }
+
+ /* Chrome, Safari, Edge, Opera */
+ input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=text] {
+ display: none;
+}
+
+
+div.crop-btn-con button:hover {
+ background-color: #181717;
+ color: white;
+}
+
+
+
+
+@media screen and (max-width:750px){
+    div.container {
+        width: 95%;
+        /* margin: 0px 10px; */
+      }
+      
+      div.my-img-con {
+        width: 100%;
+      }
+
+      div.shape-con span {      
+        font-size: 50px;
+      }
+
+      div.crop-btn-con div.manual-compress-con  div.span-con span{
+        width: 1.5px;
+       }
+
+      div.crop-btn-con button {
+       font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:560px){
+  div.main-con-user {
+    grid-template-columns: 100%;
+  }
+
+  div.crop-btn-con div.manual-compress-con  div.span-con span{
+    width: 2.5px;
+   }
+
+  div.crop-btn-con button {
+   font-size: 2em;
+}
+}
+

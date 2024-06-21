@@ -1,0 +1,83 @@
+extends base.pug
+
+block head
+    link(rel="stylesheet", href="/style/png_to_jpg.css")
+    link(rel="stylesheet", href="/style/load_s.css")
+    link(rel="stylesheet", href="/style/info.css")
+    title Convert colored image to black and white Image - Free Service | ImagePlaySite
+    meta(name="description", content="Convert colored image to black and white Image - Free Service | ImagePlaySite")
+    meta(name="keywords", content="Convert colored image to black and white Image, convert image to black and white, convert image to Grayscale, make image to black and white")
+    link(rel="canonical", href="https://imageplaysite.com/convert-image-to-black-and-white")
+    meta(name="og:title", content="Convert colored image to black and white Image - Free Service | ImagePlaySite")
+    meta(name="og:description", content="Convert colored image to black and white Image - Free Service | ImagePlaySite")
+    meta(name="og:image", content="https://imageplaysite.com/images/jpg_format.png")
+    meta(name="og:type", content="website")
+    meta(name="og:url", content="https://imageplaysite.com/convert-image-to-black-and-white")
+
+block content
+
+        main
+
+            div(class="anim-com")
+                div(class="first-e")
+                div(class="second-e")
+                div(class="third-e")
+
+            div(class="second-con")
+
+            div(class="content-con") 
+                h1 Convert Image to Black and White
+                div(class="main-con")
+                    h2 upload image size less than 11MB
+                    div(class="img-con")
+                        form(id="pngform" method="POST")
+                            label(for="inputTag")
+                                p Select Image 
+                                img(src="images/camera.jpg", alt="camera icon" width="40")
+                                input(type="file" name="pngFile" id="inputTag" size="11264")
+                                <span id="imageName"></span>
+                                 select(name="img_format" class="img-format")
+                                    option(value="jpg") jpg 
+                                    option(value="png") png 
+                                    option(value="gif") gif
+                                    option(value="bmp") bmp 
+                                    option(value="tiff") tiff 
+                                button(type="submit") Convert
+
+                div(class="information")
+
+                   p
+                        b Why Change Image to Grayscale?
+
+                        p The grayscale image helps in simplifying algorithms and as well eliminates the complexities related to computational requirements.
+                    
+                   p The Grayscale image makes room for easier learning for those who are new to image processing. This is because grayscale compressors an image to its barest minimum pixel.
+
+                   p 
+                        b About Tool
+
+                   p This Tool can help you change the colored image to black and white. This tool can work on various common image formats such as JPG/JPEG, PNG, BMP, and TIFF. with this tool, you can also change image formats such as (JPG/JPEG, PNG, BMP, and TIFF).
+
+                    p(class="title-text") Features : 
+                        ul(class="info") 
+                            li Supports formats: JPG/JPEG, PNG, BMP, and TIFF.
+                            li JOB: colored to grayscale.
+
+                    p(class="title-text") How to Use
+
+                        ol(class="info")
+                            li Select an image file (such as *.jpg, *.jpeg, *.png, *.bmp, *.tiff, *.tif).
+                            li select image format (such as *.jpg, *.jpeg, *.png, *.bmp, *.tiff, *.tif).
+                            li Click button "convert" to start upload your file.
+                            li Once the process is completed, you can download the resulting image.
+
+
+                    p(class="title-text") Other Tools 
+
+                    a(href="/change-image-format-to-jpg-png-bmp-tiff-gif") Change image Format (.gif, .tif, .jpg, .png, .bmp)
+                    a(href="/convert-image-to-pdf-in-A4-A5-A6-A7-sizes") Image to PDF (width multiple page sizes A4, A5, A6, A7 and much more)
+                    a(href="/crop-image-with-different-shapes-star-rectangle-circle-square-triangle-diamond-online") Image crop (width multiple shapes star, diamond, triangle, sqaure, rectangle and much more)
+                    a(href="/change-format-and-resize-image-width-height") Resize image width and height
+                    a(href="/compress-image-online") compress image
+
+        script(src="javascript/black_and_white.js") 

@@ -1,0 +1,25 @@
+div.main-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.main-con :not(no){
+   margin: 10px 0px;
+}
+
+
+div.main-con button{
+   padding: 5px 10px;
+   font-size: 1.5em;
+   background-color: black;
+   color: white;
+   border: none;
+   outline: none;
+ }
+
+ div.main-con button:hover{
+    background-color: rgb(53, 53, 53);
+  }

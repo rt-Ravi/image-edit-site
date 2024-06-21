@@ -1,0 +1,115 @@
+extends base.pug
+
+block head
+    link(rel="stylesheet", href="/style/png_to_jpg.css")
+    link(rel="stylesheet", href="/style/load_s.css")
+    link(rel="stylesheet", href="/style/info.css")
+    link(rel="stylesheet" type="text/css" href="./style/cropper.css")
+    link(rel="stylesheet", href="./style/crop_page_style.css")
+    title Crop Image with Different Shapes - star - triangle - diomand - circle - rectangle - Free Service | ImagePlaySite
+    meta(name="description", content="crop image with different shape - triangle, diamond, circle, start, square, rectangle")
+    meta(name="keywords", content="Crop Image with Different Shapes, Crop Image in star shape,  Crop Image in circle shape, Crop Image in triangle shape, Crop Image in rectangle shape, Crop Image in square shape, Crop Image in diamond shape")
+    link(rel="canonical", href="https://imageplaysite.com/crop-image-with-different-shapes-star-rectangle-circle-square-triangle-diamond-online")
+    meta(name="og:title", content="Crop Image with Different Shapes - star - triangle - diomand - circle - rectangle - Free Service | ImagePlaySite")
+    meta(name="og:description", content="crop image with different shape - triangle, diamond, circle, start, square, rectangle")
+    meta(name="og:image", content="https://imageplaysite.com/images/crop_img.png")
+    meta(name="og:type", content="website")
+    meta(name="og:url", content="https://imageplaysite.com/crop-image-online")
+
+block content
+
+        main
+
+            div(class="anim-com")
+                div(class="first-e")
+                div(class="second-e")
+                div(class="third-e")
+
+            div(class="content-con") 
+                h1 Crop Image with Different Shapes - star, triangle, diomand, circle, rectangle
+                div(class="main-con")
+                    h2 upload image size less than 11MB
+                    div(class="img-con")
+                        form(id="pngform" method="POST")
+                            label(for="inputTag")
+                                p Select Image 
+                                img(src="images/camera.jpg", alt="camera icon" width="40")
+                                input(type="file" name="img" id="inputTag" size="11264")
+                                <span id="imageName"></span>
+                                button(type="submit") Upload
+
+                div(class="information")
+
+                    p
+                        b Why Crop the Image?
+
+                        p In the Online world, we need only a specific part of the image so image cropping is a very beneficial tool.
+                    
+                    p On our site, you can crop images in various shapes.
+
+                    p 
+                        b About Tool
+
+                    p This Tool can help you crop images. with this tool, you can crop images in different shapes such as triangles, squares, circle diamonds, and much more. This tool can work on various common image formats such as JPG/JPEG, PNG, BMP, and TIFF.
+
+                    p(class="title-text") Features : 
+                        ul(class="info") 
+                            li Supports formats: JPG/JPEG, PNG, BMP, and TIFF.
+                            li JOB: crop image in different shapes such as (triangles, squares, circle diamonds, and much more).
+
+                    p(class="title-text") How to Use
+
+                        ol(class="info")
+                            li Select an image file (such as *.jpg, *.jpeg, *.png, *.bmp, *.tiff, *.tif).
+                            li Click button "upload" to start upload your file.
+                            li when image will upload, tool page will open you can use different shapes.
+                            li To crop the image click on "crop" button.
+                            li To download croped imaged click on "download" button.
+
+
+                    p(class="title-text") Other Tools 
+
+                    a(href="/convert-image-to-pdf-in-A4-A5-A6-A7-sizes") Image to PDF (width multiple page sizes A4, A5, A6, A7 and much more)
+                    a(href="/compress-image-online") compress image
+                    a(href="/change-format-and-resize-image-width-height") Resize image width and height
+                    a(href="/convert-image-to-black-and-white") Convert image to black and white
+                    a(href="/change-image-format-to-jpg-png-bmp-tiff-gif") Change image Format (.gif, .tif, .jpg, .png, .bmp)
+
+
+            <div class="main-crop-user-con"> 
+                <h1>Crop Image with Different Shapes - star, triangle, diomand, circle, rectangle</h1>
+                <div class="main-con-user">
+                    <div class="container">
+                        h2 Orignal Image 
+                            span(id="tool-box-display") &#60;
+                        <div class="my-img-con">
+                            img(id="image" src=url alt="UnCroped Image")
+                        </div>
+                        h2 Croped Image
+                        <div id="result"></div>
+                    </div>
+                    <div class="tool-con" id="tool-con">
+                        <div class="sticky-div"> 
+                            h2 Cropping Shapes 
+                                span(class="cross-con" id="cross-con") &#10060;
+                            <div class="shape-con">
+                                span(title="triangle" onclick="changeShape('triangle')") &#9651;
+                                span(title="square" onclick="changeShape('square')") &#9633;
+                                span(title="rectangle" onclick="changeShape('rectangle')") &#9645;
+                                span(title="diamond" onclick="changeShape('diamond')") &#9671;
+                                span(title="circle" onclick="changeShape('circle')") &#9675;
+                                span(title="star" onclick="changeShape('star')") &#9734;
+                            </div>
+                            <div class="crop-btn-con">
+                                button(type="button" id="button") Crop
+                                a(href=url id="download" download="result.png") Download 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        script(src="javascript/crop_img.js")
+        script(src="./javascript/cropper.js")
+        script(src="./javascript/img_crop.js") 
+

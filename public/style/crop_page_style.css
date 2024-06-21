@@ -1,0 +1,193 @@
+h1{
+    text-align: center;
+    margin: 20px 50px;
+}
+
+.main-crop-user-con{
+  display: none;
+}
+
+div.main-con-user {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: 70% 30%;
+  /* grid-gap: 10px 20px; */
+}
+
+div.container {
+  /* border: 2px solid rgb(255, 255, 255); */
+  width: 500px;
+
+  margin: auto;
+}
+
+div.my-img-con {
+  /* border: 4px solid rgb(189, 54, 54); */
+    /* margin: 0px 40px; */
+    width: 500px;
+}
+
+img#image {
+  width: 100%;
+}
+
+div#result img{
+  width: 100%;
+
+}
+
+.cropper-view-box {
+  outline: 0;
+  box-shadow: 0 0 0 1px #39f;
+}
+
+div.container h2 {
+  text-align: center;
+  margin: 20px 5px;
+  /* border: 1px solid firebrick; */
+}
+
+div.container h2 span{
+  float: right;
+  font-size: 1em;
+  display: none;
+  cursor: pointer;
+}
+
+div.tool-con {
+  /* border: 4px solid rgb(57, 230, 42); */
+  background-color: #181717;
+  color: white;
+  display: block;
+  min-width: 200px;
+  min-height: 350px;
+
+}
+
+div.sticky-div {
+  padding: 10px 0px;
+  position: sticky;
+  top: 0;
+  min-width: 200px;
+  min-height: 350px;
+}
+
+div.tool-con h2 {
+  text-align: center;
+}
+div.tool-con h2 span{
+  cursor: pointer;
+  display: none;
+}
+
+div.shape-con {
+  /* border: 1px solid gold; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div.shape-con span {
+  /* border: 1px solid rgb(70, 12, 231); */
+
+  font-size: 70px;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+div.shape-con span:hover{
+
+ color: gray;
+}
+
+div.crop-btn-con {
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+}
+
+div.crop-btn-con button {
+  padding: 5px 40px;
+  font-size: 2em;
+}
+
+div.crop-btn-con button:hover {
+  background-color: black;
+  color: gray;
+}
+
+div.crop-btn-con a {
+  margin: 20px 5px;
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+div.crop-btn-con a:hover{
+  color: gray;
+}
+
+
+
+@media screen and (max-width:750px){
+    div.container {
+        width: 80%;
+        /* margin: 0px 10px; */
+      }
+      
+      div.my-img-con {
+        width: 100%;
+      }
+
+      div.shape-con span {      
+        font-size: 50px;
+      }
+}
+
+@media screen and (min-width:501px){
+  div.tool-con {
+    display: block;
+  }
+}
+
+@media screen and (max-width:500px){
+
+
+  div.container h2 span{
+    display: inline;
+  }
+
+  div.main-con {
+  /* border: 2px solid red; */
+
+    display: block;
+    position: relative;
+  }
+
+  div.tool-con {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #181717;
+    z-index: 10;
+    display: none;
+  }
+
+  div.tool-con h2 {
+    font-size: 1.2em;
+    /* border: 1px solid gold; */
+  }
+
+  div.tool-con h2 span{
+    display: inline;
+    margin-right: 10px;
+    float: right;
+  }
+  
+}

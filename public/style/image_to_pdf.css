@@ -1,0 +1,122 @@
+
+div.content-con {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.second-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.second-con :not(no) {
+    margin: 10px 0px;
+  }
+  
+  div.second-con h1 {
+    text-align: center;
+  }
+  
+  div.second-con a {
+    padding: 10px 5px;
+    font: 1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+  
+  div.second-con a:hover {
+    background-color: rgb(46, 45, 45);
+  }
+  
+  div.content-con h1 {
+    margin: 20px 0px;
+    font-size: 2em;
+    color: #000000e3;
+    text-align: center;
+  }
+  
+  div.content-con h2 {
+    font-size: 1.2em;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  div.content-con div.img-con {
+    margin: 20px 0px;
+    border: 1px solid #dbdbdbb8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 80px;
+  }
+  
+  div.content-con div.img-con label {
+    cursor: pointer;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.content-con div.img-con label :not(bo) {
+    margin: 5px 0px;
+  }
+  
+  div.content-con div.img-con input#inputTag {
+    display: none;
+  }
+  
+  #imageName {
+    color: #f1310fb8;
+  }
+  
+  .img-format {
+    width: 50px;
+    border: 1px solid gray;
+    font-size: 15px;
+    outline: none;
+  }
+  .img-format option {
+    font-size: 15px;
+  }
+  
+  div.size-con {
+    /* border: 1px solid gray; */
+  }
+  
+  div.size-con input {
+    width: 40px;
+    padding: 4px;
+    text-align: center;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  div.size-con span {
+    font-size: 15px;
+  }
+  
+  button.upload {
+    margin: 10px 0px;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    color: var(--text-color);
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1px;
+    background-color: white;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,18 @@
+extends base.pug
+
+block head
+    title 404 Page Not Found | ImagePlaySite
+    meta(name="description", content="Status code 404 page not found")
+    meta(name="keywords", content="page not found, 404, page not get")
+    meta(name="robots", content="noindex")
+    link(rel="stylesheet", href="style/404_not_found.css")
+    meta(name="og:title", content="404 Page Not Found | ImagePlaySite")
+    meta(name="og:description", content="Status code 404 page not found")
+    meta(name="og:type", content="website")
+block content
+    main
+        div(class="main-con")
+            h1 404 Page Not Found
+            button(id="back-btn") Back
+
+    script(src="javascript/pagenotfound.js") 

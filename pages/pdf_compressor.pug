@@ -1,0 +1,52 @@
+extends base.pug
+
+block head
+    link(rel="stylesheet", href="/style/png_to_jpg.css")
+    link(rel="stylesheet", href="/style/load_s.css")
+    link(rel="stylesheet", href="/style/info.css")
+Disallow: ../pages/pdf_merger.pug
+    title PDF Compress - Free Service | ImagePlaySite
+    meta(name="robots", content="noindex, nofollow")
+    meta(name="description", content="PDF Compress with one click 100MB to 10MB - Free Service")
+    meta(name="keywords", content="PDF Compress, PDF Compress - Free Service")
+    link(rel="canonical", href="https://www.imageplaysite.com/pdf-compress")
+    meta(name="og:title", content="PDF Compress - Free Service | ImagePlaySite")
+    meta(name="og:description", content="PDF Compress with one click 100MB to 10MB - Free Service")
+    meta(name="og:image", content="https://www.imageplaysite.com/images/img_compress.png")
+    meta(name="og:type", content="website")
+    meta(name="og:url", content="https://www.imageplaysite.com/pdf-compress")
+
+block content
+
+        main
+
+            div(class="anim-com")
+                div(class="first-e")
+                div(class="second-e")
+                div(class="third-e")
+
+            div(class="content-con") 
+                h1 PDF Compress
+                div(class="main-con")
+                    h2 PDF Should less than 50MB
+                    div(class="img-con")
+                        form(action="/pdf-compress" id="pngform" method="POST" enctype="multipart/form-data")
+                            label(for="inputTag")
+                                p Select Image 
+                                img(src="images/camera.jpg", alt="camera icon" width="40")
+                                input(type="file" name="pdf" id="inputTag" size="11264")
+                                <span id="imageName"></span>
+                                button(type="submit") Convert
+
+                div(class="information")
+
+                    p Page Information
+
+                    h2 On Imageplaysite you can easily compress PDF
+
+                    p PDF size should less than 50MB and Not protected with password 
+
+                    p To select PDF click on Camera icon and you can select and PDF easily.
+
+        script(src="javascript/pdf_to_image.js")
+

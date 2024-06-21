@@ -1,0 +1,73 @@
+/* div.main-pdf-con{
+} */
+
+div.pdf-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.each-pdf{
+    border: 1px solid rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+    margin: 10px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+div.remove-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    background-color: aqua;
+    padding: 2px;
+    display: none;
+  }
+
+div.each-pdf:hover div{
+    display: block;
+  }
+
+button.merger-btn{
+    padding: 5px 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin: 5px 10px;
+}
+
+div.down-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.down-con h1{
+    text-align: center;
+}
+
+div.down-con a{
+    margin: 10px;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+div.down-con a:hover{
+    background-color: rgb(54, 54, 54);
+    color: white;
+}

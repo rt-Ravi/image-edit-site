@@ -1,0 +1,159 @@
+main section.site-intro{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 40px 10px;
+}
+
+main section.site-intro h1{
+    font-size: 1.5em;
+    color: #000000e3;
+    margin: 10px 0px;
+}
+
+section.site-about{
+    padding: 20px 30px;
+}
+
+ul.ul-ab{
+    margin: 10px 20px;
+}
+
+
+main section.site-intro h2{
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+
+main section.site-intro p{
+    font-size: 1.2em;
+    color: var(--text-color);
+    
+}
+
+main section.services div.services-box-con{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 800px;
+    padding: 10px 0px;
+    grid-gap: 20px;
+    
+}
+
+main section.services div.services-con {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+main section.services div.services-box-con a{
+    text-decoration: none;
+}
+
+
+
+main section.services div.services-box-con div{
+    border: 1px solid #dbdbdbb8 ;
+    padding: 40px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: var(--text-color);
+    
+}
+
+main section.services div.services-box-con div:hover{
+    box-shadow: 1px 1px 10px 1px inset;
+}
+
+
+main section.services div.services-box-con div h2{
+    font-weight: bold;
+    font-size: 1em;
+    
+}
+
+
+main section.services div.services-box-con div img{
+   width: 50px;
+   margin: 10px 0px;    
+   /* display: block; */
+   /* border: 1px solid gray; */
+    
+}
+
+main section.services div.services-box-con div.image_format img{
+    width: 150px;
+    margin: 10px 0px;    
+    /* display: block; */
+    /* border: 1px solid gray; */
+     
+ }
+
+ main section.services div.services-box-con div.img-crop img{
+    width: 56px;
+    margin: 10px 0px;    
+    /* display: block; */
+    /* border: 1px solid gray; */
+     
+ }
+
+ 
+
+ 
+
+
+@media screen and (max-width:890px){
+    main section.services div.services-box-con{
+        
+        grid-template-columns: auto auto auto;
+        
+    }
+    
+
+}
+
+@media screen and (max-width:680px){
+    main section.services div.services-box-con{
+        
+        grid-template-columns: auto auto;
+        
+    }
+    
+
+}
+
+@media screen and (max-width:500px){
+    main section.services div.services-box-con{
+        
+        grid-template-columns: auto;
+        
+    }
+
+    main section.services div.services-box-con div h2{
+        font-size: 1.6em;
+        
+    }
+
+    main section.services div.services-box-con div img{
+        width: 100px;
+        margin: 10px 0px;    
+        /* display: block; */
+        /* border: 1px solid gray; */
+         
+     }
+     
+     main section.services div.services-box-con div.image_format img{
+         width: 200px;
+         margin: 10px 0px;    
+         /* display: block; */
+         /* border: 1px solid gray; */
+          
+      }
+
+     
+    
+
+}

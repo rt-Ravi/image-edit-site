@@ -1,0 +1,70 @@
+extends base.pug
+
+block head
+        link(rel="stylesheet", href="/style/img_to_pdf_adjust.css")
+        link(rel="stylesheet", href="/style/load_s.css")
+        title Convert Image To PDF - A4 -A5 - A6 - A7 page sizes - Free Service | ImagePlaySite
+        meta(name="robots", content="noindex, nofollow")
+
+block content
+
+        div(class="anim-com")
+                div(class="first-e")
+                div(class="second-e")
+                div(class="third-e")
+
+        div(class="main-img-pdf-grid-box" id="main-img-pdf-grid-box")
+                div(class="img-con-main-div")
+                        div(id="dis-con")
+                                p(id="dis-tool") &#60;
+                        div(class="flex-img-con" id="flex-img-con")
+                                
+                div(class="tool-con" id="tool-con")
+                        div(class="sticky-tool-con")
+                                h2 JPG to PDF
+                                        span(id="tool-box-rm") &#10060;
+                                h2 Page Layout
+                                div(class="layout-con")
+                                        div(class="port" id="portrait") 
+                                                span(class="por") &#9645;
+                                                p Portrait
+                                        div(class="land" id="landscape") 
+                                                span(class="lan") &#9645;
+                                                p Landscape
+                                h2 Image Position
+                                div(class="view-con")
+                                        div(class="portrait" id="vertical") 
+                                                h3 Vertical
+                                                div
+                                                        span(id="vtop") Top
+                                                        span(id="vcenter") Center
+                                                        span(id="vbottom") Bottom
+                                        div(class="landscape" id="horizontal") 
+                                                h3 Horizontal
+                                                div
+                                                        span(id="hleft") Left
+                                                        span(id="hcenter") Center
+                                                        span(id="hright") Right
+                                h2 Page Size
+                                div(class="size-con")
+                                        <select name="cars" id="cars" onchange="res.call(this, event)">
+                                                <option value="A1">A1</option>
+                                                <option value="A2">A2</option>
+                                                <option value="A3">A3</option>
+                                                <option value="A4" selected>A4</option>
+                                                <option value="A5">A5</option>
+                                                <option value="A6">A6</option>
+                                                <option value="A7">A7</option>
+                                                <option value="A8">A8</option>
+                                                <option value="A9">A9</option>
+                                                <option value="A10">A10</option>
+                                        </select>
+                                
+                                div(class="down-btn-con" id="down-btn-con")
+                                        button(class="down-btn" id="makepdf-btn") Make PDF
+
+                                
+
+        script(src="javascript/img_to_pdf_adjust.js")
+
+         

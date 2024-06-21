@@ -1,0 +1,21 @@
+User-agent: *
+Disallow: ../pages/black_and_white_to_color.pug
+Disallow: ../pages/B_W_image.pug
+Disallow: ../pages/compress_image_page.pug
+Disallow: ../pages/crop_image_tool.pug
+Disallow: ../pages/down_compress_image.pug
+Disallow: ../pages/download_compress_pdf.pug
+Disallow: ../pages/download_ex_img.pug
+Disallow: ../pages/image_pdf_adjust.pug
+Disallow: ../pages/merge_pdf_user.pug
+Disallow: ../pages/pdf_merger.pug
+Disallow: ../pages/pdf_compressor.pug
+Disallow: ../pages/pdf_to_image.pug
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+extends base.pug
+
+block head
+    link(rel="stylesheet", href="/style/png_to_jpg.css")
+    link(rel="stylesheet", href="/style/load_s.css")
+    link(rel="stylesheet", href="/style/info.css")
+    title PDF Merger - Free Service | ImagePlaySite
+    meta(name="robots", content="noindex, nofollow")
+    meta(name="description", content="PDF Merger. here you can easily merge pdf, Adjust PDFs number top, middle, last - Free Service")
+    meta(name="keywords", content="PDF Merger, pdf merge - free Service")
+    link(rel="canonical", href="https://www.imageplaysite.com/pdf-merger")
+    meta(name="og:title", content="PDF Merger - Free Service | ImagePlaySite")
+    meta(name="og:description", content="PDF Merger. here you can easily merge pdf, Adjust PDFs number top, middle, last - Free Service")
+    meta(name="og:image", content="https://www.imageplaysite.com/images/pdf_plus_pdf.png")
+    meta(name="og:type", content="website")
+    meta(name="og:url", content="https://www.imageplaysite.com/pdf-merger")
+
+block content
+
+        main
+
+            div(class="anim-com")
+                div(class="first-e")
+                div(class="second-e")
+                div(class="third-e")
+
+            div(class="content-con") 
+                h1 PDF MERGER
+                div(class="main-con")
+                    h2 Each PDF Size Should less than 40MB
+                    div(class="img-con")
+                        form(action="/pdf-merger" id="pngform" method="POST" enctype="multipart/form-data")
+                            label(for="inputTag")
+                                p Select PDF 
+                                img(src="images/camera.jpg", alt="camera icon" width="40")
+                                input(type="file" name="pdf" id="inputTag" size="11264" multiple)
+                                <span id="imageName"></span>
+                                button(type="submit") Upload
+
+                div(class="information")
+
+                    p Page Information
+
+                    h2 On Imageplaysite you can easily Merge PDFs togther.
+
+                    p PDF Merger. here you can easily merge pdf, Adjust PDFs number top, middle, last - Free Service
+
+                    p PDF Size should not greater than 50MB.
+
+                    p You can easily Rearrange the PDF position and merge it according to your reference.
+
+        script(src="javascript/pdf_merger.js")

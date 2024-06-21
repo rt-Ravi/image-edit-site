@@ -1,0 +1,88 @@
+extends base.pug
+
+block head
+    link(rel="stylesheet", href="/style/png_to_jpg.css")
+    link(rel="stylesheet", href="/style/load_s.css")
+    link(rel="stylesheet", href="/style/info.css")
+    title Change Image Format - Free Service | ImagePlaySite
+    meta(name="description", content="On ImagePlaySite You can easly change image format to gif, jpg, png, tiff, bmp - Free Service")
+    meta(name="keywords", content="change image fromat, jpg, png, gif, tiff, bmp")
+    link(rel="canonical", href="https://imageplaysite.com/change-image-format-to-jpg-png-bmp-tiff-gif")
+    meta(name="og:title", content="Change Image Format - Free Service | ImagePlaySite")
+    meta(name="og:description", content="On ImagePlaySite You can easly change image format to gif, jpg, png, tiff, bmp - Free Service")
+    meta(name="og:image", content="https://imageplaysite.com/images/image_format.png")
+    meta(name="og:type", content="website")
+    meta(name="og:url", content="https://imageplaysite.com/change-image-format-to-jpg-png-bmp-tiff-gif")
+block content
+
+        main
+
+            div(class="anim-com")
+                div(class="first-e")
+                div(class="second-e")
+                div(class="third-e")
+
+            div(class="second-con")
+
+            div(class="content-con")
+                h1 Change Image format to jpg, png, gif, bmp, tiff
+                div(class="main-con")
+                    h2 upload image size less than 11MB
+                    div(class="img-con")
+                        form(id="pngform" method="POST")
+                            label(for="inputTag")
+                                p Select Image 
+                                img(src="images/camera.jpg", alt="camera icon" width="40")
+                                input(type="file" name="pngFile" id="inputTag" size="11264")
+                                <span id="imageName"></span>
+                                select(name="img_format" class="img-format")
+                                    option(value="jpg") jpg 
+                                    option(value="png") png 
+                                    option(value="gif") gif
+                                    option(value="bmp") bmp 
+                                    option(value="tiff") tiff 
+                                button(type="submit" id="btn") Convert
+
+
+                div(class="information")
+
+                   p
+                        b Why Change Image Format?
+
+                        p All the image formats are suitable for different purposes. so you should use the right image format for specific purposes.
+
+                   p <b>JPG</b> is a widely used compressed image format for containing digital images. It is the most common image format used in digital cameras, different operating systems, and on the Internet.
+
+                   p <b>PNG</b> stands for Portable Network Graphic, a type of raster image file. It's a particularly popular file type with web designers because it can handle graphics with transparent or semi-transparent backgrounds.
+
+                   p <b>GIF</b> image files are commonly used on the web to display graphics and logos.
+
+                   p <b>BMP</b> file contains uncompressed data, making it ideal for storing and displaying high-quality digital images.
+
+                   p <b>TIFF</b> stands for Tag Image File Format, which is a computer file used to store raster graphics and image information.
+
+                   p This Tool can help you change the image format such as JPG/JPEG, PNG, BMP, and TIFF. This tool can work on various common image formats such as JPG/JPEG, PNG, BMP, and TIFF.
+
+                    p(class="title-text") Features : 
+                        ul(class="info") 
+                            li Supports formats: JPG/JPEG, PNG, BMP, and TIFF.
+                            li JOB: change image format.
+
+                    p(class="title-text") How to Use
+
+                        ol(class="info")
+                            li Select an image file (such as *.jpg, *.jpeg, *.png, *.bmp, *.tiff, *.tif).
+                            li select image format (such as *.jpg, *.jpeg, *.png, *.bmp, *.tiff, *.tif).
+                            li Click button "convert" to start upload your file.
+                            li Once the process is completed, you can download the resulting image.
+
+
+                    p(class="title-text") Other Tools 
+
+                    a(href="/convert-image-to-pdf-in-A4-A5-A6-A7-sizes") Image to PDF (width multiple page sizes A4, A5, A6, A7 and much more)
+                    a(href="/crop-image-with-different-shapes-star-rectangle-circle-square-triangle-diamond-online") Image crop (width multiple shapes star, diamond, triangle, sqaure, rectangle and much more)
+                    a(href="/compress-image-online") compress image
+                    a(href="/change-format-and-resize-image-width-height") Resize image width and height
+                    a(href="/convert-image-to-black-and-white") Convert image to black and white
+
+        script(src="javascript/png_to_jpg.js")

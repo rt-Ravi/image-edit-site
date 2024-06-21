@@ -1,0 +1,7 @@
+div.privacy-con{
+    padding: 40px 60px;
+}
+
+div.privacy-con > :not(no){
+    margin: 20px 0px;
+}

@@ -1,0 +1,135 @@
+extends base.pug
+
+block head
+    link(rel="stylesheet", href="/style/image_to_pdf.css")
+    link(rel="stylesheet", href="/style/load_s.css")
+    link(rel="stylesheet", href="/style/info.css")
+    link(rel="stylesheet", href="/style/img_to_pdf_adjust.css")
+    title Convert Image To PDF - A4 -A5 - A6 - A7 page sizes - Free Service | ImagePlaySite
+    meta(name="description", content="convert images to pdf in different page size and also adjust pdf properties, page sizes - A4, A5, A6, A7 - Free Service")
+    meta(name="keywords", content="image to pdf, convert image to pdf, convert image to pdf free service, convert image to pdf in A4 size, convert image to pdf in A3 size, convert image to pdf in A2 size, convert image to pdf in A3 size, convert image to pdf in A1 size, convert image to pdf in A5 size")
+    link(rel="canonical", href="https://imageplaysite.com/convert-image-to-pdf-in-A4-A5-A6-A7-sizes")
+    meta(name="og:title", content="Convert Image To PDF - A4 -A5 - A6 - A7 page sizes - Free Service | ImagePlaySite")
+    meta(name="og:description", content="convert images to pdf in different page size and also adjust pdf properties, page sizes - A4, A5, A6, A7 - Free Service")
+    meta(name="og:image", content="https://imageplaysite.com/images/img_to_pdf.png")
+    meta(name="og:type", content="website")
+    meta(name="og:url", content="https://imageplaysite.com/convert-image-to-pdf-in-A4-A5-A6-A7-sizes")
+
+block content
+
+        main
+
+            div(class="anim-com")
+                div(class="first-e")
+                div(class="second-e")
+                div(class="third-e")
+
+            div(class="content-con") 
+                h1 Convert Image To PDF - A4 -A5 - A6 - A7 page sizes
+                div(class="main-con")
+                    h2 upload image size less than 11MB
+                    div(class="img-con")
+                        form(id="pngform" method="POST")
+                            label(for="inputTag")
+                                p Select Image 
+                                img(src="images/camera.jpg", alt="camera icon" width="40")
+                                input(type="file" name="img" id="inputTag" size="11264" multiple)
+                                <span id="imageName"></span>
+                                button(type="submit") Upload
+
+                div(class="information")
+
+                    p
+                        b Why use PDFs?
+
+                        p PDF is a secure file format. If you need your files to be private - PDFs have you covered with their high levels of security. They are one of the most trusted document formats, as they’re even used by legal professionals, and are recognized in court.
+                    
+                    p you can set PDF page size in A4, A3, A5, A2, A1, A6, etc.
+
+                    p <b>A4</b> paper measures 21 x 29.7 cm or 210 x 297 mm.
+                    p <b>A3</b> paper size measurements are 297 mm x 420 mm, 29.7 cm x 42 cm or 11.7 in x 16.5 in
+                    p <b>A2</b> paper size is 420 x 594 mm or 42 x 59.4 cm.
+                    p you can all A-series paper sizes.
+
+
+                    p <b>About Tool </b>
+
+                    p This Tool can help you to change images to PDF. with this tool, you can create PDF by images, you can also set the size of PDF pages such as (A1, A2, A3, A4, A5 and much more). This tool can work on various common image formats such as JPG/JPEG, PNG, BMP, and TIFF.
+
+                    p(class="title-text") Features : 
+                        ul(class="info") 
+                            li Supports formats: JPG/JPEG, PNG, BMP, and TIFF.
+                            li JOB: Image to PDF
+
+                    p(class="title-text") How to Use
+
+                        ol(class="info")
+                            li Select an image file (such as *.jpg, *.jpeg, *.png, *.bmp, *.tiff, *.tif).
+                            li Click button "upload" to start upload your file.
+                            li when image will upload, tool page will open you can use different tools.
+                            li You can convert PDF to Portrait or Landscape layout.
+                            li You can set PDF page size such as (A1, A2, A3, A4, A5 and much more).
+                            li To create PDF click on "make PDF" button.
+                            li When PDF will be created, you can download it. 
+
+
+                    p(class="title-text") Other Tools 
+
+                    a(href="/change-image-format-to-jpg-png-bmp-tiff-gif") Change image Format (.gif, .tif, .jpg, .png, .bmp)
+                    a(href="/change-format-and-resize-image-width-height") Resize image width and height
+                    a(href="/crop-image-with-different-shapes-star-rectangle-circle-square-triangle-diamond-online") Image crop (width multiple shapes star, diamond, triangle, sqaure, rectangle and much more)
+                    a(href="/compress-image-online") compress image
+                    a(href="/convert-image-to-black-and-white") Convert image to black and white
+
+            div(class="main-img-pdf-grid-box" id="main-img-pdf-grid-box")
+                div(class="img-con-main-div")
+                        div(id="dis-con")
+                                p(id="dis-tool") &#60;
+                        div(class="flex-img-con" id="flex-img-con")
+                                
+                div(class="tool-con" id="tool-con")
+                        div(class="sticky-tool-con")
+                                h2 JPG to PDF
+                                        span(id="tool-box-rm") &#10060;
+                                h2 Page Layout
+                                div(class="layout-con")
+                                        div(class="port" id="portrait") 
+                                                span(class="por") &#9645;
+                                                p Portrait
+                                        div(class="land" id="landscape") 
+                                                span(class="lan") &#9645;
+                                                p Landscape
+                                h2 Image Position
+                                div(class="view-con")
+                                        div(class="portrait" id="vertical") 
+                                                h3 Vertical
+                                                div
+                                                        span(id="vtop") Top
+                                                        span(id="vcenter") Center
+                                                        span(id="vbottom") Bottom
+                                        div(class="landscape" id="horizontal") 
+                                                h3 Horizontal
+                                                div
+                                                        span(id="hleft") Left
+                                                        span(id="hcenter") Center
+                                                        span(id="hright") Right
+                                h2 Page Size
+                                div(class="size-con")
+                                        <select name="cars" id="cars" onchange="res.call(this, event)">
+                                                <option value="A1">A1</option>
+                                                <option value="A2">A2</option>
+                                                <option value="A3">A3</option>
+                                                <option value="A4" selected>A4</option>
+                                                <option value="A5">A5</option>
+                                                <option value="A6">A6</option>
+                                                <option value="A7">A7</option>
+                                                <option value="A8">A8</option>
+                                                <option value="A9">A9</option>
+                                                <option value="A10">A10</option>
+                                        </select>
+                                
+                                div(class="down-btn-con" id="down-btn-con")
+                                        button(class="down-btn" id="makepdf-btn") Make PDF
+
+        script(src="javascript/img_to_pdf.js")
+

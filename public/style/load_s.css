@@ -1,0 +1,65 @@
+div.anim-com{
+    /* border: 1px solid black; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    display: none;
+}
+
+div.anim-com div{
+    width: 20px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0px 5px;
+
+}
+
+div.anim-com div.first-e{
+   background-color: transparent;
+   transition: all 0.2s;
+}
+
+div.anim-com div.second-e{
+    background-color: transparent;
+   transition: all 0.2s;
+
+ }
+
+ div.anim-com div.third-e{
+    background-color: transparent;
+   transition: all 0.2s;   
+
+ }
+
+ /* @keyframes first_e{
+    0%{
+        background-color: #64eded;
+    }
+
+    100%{
+        background-color: transparent;
+    }
+ }
+
+ @keyframes second_e{
+    0%{
+        background-color: #f5ee89;
+    }
+
+    100%{
+        background-color: transparent;
+    }
+ }
+
+ @keyframes third_e{
+    0%{
+        background-color: #797cef;
+    }
+
+    100%{
+        background-color: transparent;
+    }
+ } */

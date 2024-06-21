@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    --text-color: #181717ad;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-content: space-between; */
+    /* border: 1px solid red; */
+}
+
+nav{
+    border-bottom: 1px solid #6cf72bb8;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+
+nav div.nav-con{
+    /* border: 4px solid gray; */
+    color: var(--text-color);
+}
+
+nav div.nav-con div.sub-nav-con{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 40px;
+    /* border: 4px solid rgb(193, 241, 20); */
+}
+
+div.sub-nav-con div.company-con a{
+    text-decoration: none;
+    color: var(--text-color);
+ 
+ }
+
+div.sub-nav-con div.company-con p{
+    font-size: 1.5em;
+}
+
+div.sub-nav-con div.company-con p:hover{
+    color: black;
+}
+
+div.sub-nav-con div.menu-con ul{
+    list-style: none;
+    display: flex;
+}
+
+div.sub-nav-con div.menu-con ul a{
+   text-decoration: none;
+   color: var(--text-color);
+
+}
+
+div.sub-nav-con div.menu-con ul li{
+    margin: 0px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+div.sub-nav-con div.menu-con ul li:hover{
+    color: black;
+}
+
+div.sub-nav-con div.menu-con li.tool-con{
+   position: relative;
+}
+
+div.sub-nav-con div.menu-con li.tool-con ul.tool-types{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    background-color: #1a1a1a;
+    display: none;
+    padding: 0px 4px;
+    z-index: 10;
+}
+
+div.sub-nav-con div.menu-con li.tool-con ul.tool-types a{
+    padding: 0;
+    margin: 0;
+}
+
+div.sub-nav-con div.menu-con li.tool-con ul.tool-types li{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: white;
+    /* border: 1px solid lawngreen; */
+    margin: 5px 2px;
+    padding: 4px 2px;
+}
+
+div.sub-nav-con div.menu-con li.tool-con:hover ul.tool-types{
+   display: flex;
+ }
+
+div.hambuger{
+    display: none;
+    width: 1.2em;
+    user-select: none;
+}
+
+div.hambuger img{
+    width: 20px;
+}
+
+div.tool-con-con{
+    padding: 20px 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+div.tool-con-con ul{
+    list-style: none;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: white;
+
+}
+
+div.tool-con-con a{
+
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    margin: 0px 10px;
+ }
+
+
+
+div.phone-nav{
+   padding: 0px 40px;
+   overflow:hidden;
+   height: 0px;
+}
+
+div.phone-nav ul{
+    list-style: none;
+ }
+
+ div.phone-nav ul a{
+    text-decoration: none;
+    color: var(--text-color);
+
+ }
+
+ div.phone-nav ul li{
+    margin: 15px 0px;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    color: var(--text-color);
+
+ }
+
+ div.phone-nav li.tool-con{
+    position: relative;
+ }
+ 
+ div.phone-nav li.tool-con ul.tool-types{
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     width: 120px;
+     background-color: #1a1a1a;
+     display: none;
+     padding: 0px 4px;
+     z-index: 10;
+ }
+ 
+ div.phone-nav li.tool-con ul.tool-types a{
+     padding: 0;
+     margin: 0;
+ }
+ 
+ div.phone-nav li.tool-con ul.tool-types li{
+     font-size: 0.8em;
+     font-weight: bold;
+     color: white;
+     /* border: 1px solid lawngreen; */
+     margin: 5px 2px;
+     padding: 4px 2px;
+ }
+ 
+ div.phone-nav li.tool-con:hover ul.tool-types{
+    display: flex;
+  }
+
+
+
+footer div.footer-div{
+    margin: 10px;
+    color: var(--text-color);
+    font-size: 1.2em;
+    padding: 10px 40px;
+    text-align: center;
+    border-top: 1px solid #6cf72bb8;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+span.condition{
+    font-size: 0.8em;
+    margin: 5px;
+    color: black;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+a.mail_foot{
+    margin: 10px 0px;
+    color: rebeccapurple;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+@media screen and (max-width:570px){
+
+    div.sub-nav-con div.menu-con{
+        display: none;
+    }
+
+    div.hambuger{
+        display: block;
+    }
+}
+
+@media screen and (min-width:571px){
+    div.phone-nav{
+        display: none;
+     }
+     
+    
+}
+
+@media screen and (max-width:890px){
+    div.tool-con-con{
+        display: none;
+     }
+     
+    
+}

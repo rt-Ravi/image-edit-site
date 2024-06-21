@@ -1,0 +1,89 @@
+extends base.pug
+
+block head
+    link(rel="stylesheet", href="/style/png_to_jpg.css")
+    link(rel="stylesheet", href="/style/load_s.css")
+    link(rel="stylesheet", href="/style/info.css")
+    title Resize Image Width and Height - Free Service | ImagePlaySite
+    meta(name="description", content="Resize Image width and height and also change image format jpg, png, tiff, gif, bmp")
+    meta(name="keywords", content="change image fromat, Resize Image width and height")
+    link(rel="canonical", href="https://imageplaysite.com/change-format-and-resize-image-width-height")
+    meta(name="og:title", content="Resize Image Width and Height - Free Service | ImagePlaySite")
+    meta(name="og:description", content="Resize Image width and height and also change image format jpg, png, tiff, gif, bmp")
+    meta(name="og:image", content="https://imageplaysite.com/images/width_and_height.png")
+    meta(name="og:type", content="website")
+    meta(name="og:url", content="https://imageplaysite.com/change-format-and-resize-image-width-height")
+block content
+
+        main
+
+            div(class="anim-com")
+                div(class="first-e")
+                div(class="second-e")
+                div(class="third-e")
+
+            div(class="second-con")
+
+            div(class="content-con") 
+                h1 Change Image format and resize width and height
+                div(class="main-con")
+                    h2 upload image size less than 11MB
+                    div(class="img-con")
+                        form(id="pngform" method="POST")
+                            label(for="inputTag")
+                                p Select Image 
+                                img(src="images/camera.jpg", alt="camera icon" width="40")
+                                input(type="file" name="pngFile" id="inputTag" size="11264")
+                                <span id="imageName"></span>
+
+                                div(class="size-con") 
+                                    input(type="number" placeholder="Width" class="size" name="width" class="width")
+                                    span &#10060;
+                                    input(type="number" placeholder="Height" class="size" name="height" class="height")
+
+                                select(name="img_format" class="img-format")
+                                    option(value="jpg") jpg 
+                                    option(value="png") png 
+                                    option(value="gif") gif
+                                    option(value="bmp") bmp 
+                                    option(value="tiff") tiff 
+                                button(type="submit") Convert
+
+                div(class="information")
+
+                    p
+                        b Why Resize the Image?
+
+                        p In the Online world image size really matters. especially to people with slow connections who can wait forever for a page with pictures to upload. and various sites demand a specific width and height for the photo.
+
+                    p 
+                        b About Tool
+
+                    p This Tool can help you change the image format such as JPG/JPEG, PNG, BMP, and TIFF. This tool can work on various common image formats such as JPG/JPEG, PNG, BMP, and TIFF.
+
+                    p This Tool can help you change the width and height of the image, and enlarge or reduce the image size. You can specify the width and height. This tool can work on various common image formats such as JPG/JPEG, PNG, BMP, and TIFF.
+
+                    p(class="title-text") Features : 
+                        ul(class="info")
+                            li Supports formats: JPG/JPEG, PNG, BMP, and TIFF.
+                            li Supports units: pixel.
+
+                    p(class="title-text") How to Use
+
+                        ol(class="info")
+                            li Select an image file (such as *.jpg, *.jpeg, *.png, *.bmp, *.tiff, *.tif).
+                            li give the width and height of the image in pixels, if you don't give one of their tools automatically takes the best of it.
+                            li Click button "convert" to start upload your file.
+                            li Once the process is completed, you can download the resulting image.
+
+
+                    p(class="title-text") Other Tools 
+
+                    a(href="/change-image-format-to-jpg-png-bmp-tiff-gif") Change image Format (.gif, .tif, .jpg, .png, .bmp)
+                    a(href="/convert-image-to-pdf-in-A4-A5-A6-A7-sizes") Image to PDF (width multiple page sizes A4, A5, A6, A7 and much more)
+                    a(href="/crop-image-with-different-shapes-star-rectangle-circle-square-triangle-diamond-online") Image crop (width multiple shapes star, diamond, triangle, sqaure, rectangle and much more)
+                    a(href="/compress-image-online") compress image
+                    a(href="/convert-image-to-black-and-white") Convert image to black and white
+            
+
+        script(src="javascript/resize_img.js") 

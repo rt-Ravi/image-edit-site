@@ -1,0 +1,87 @@
+extends base.pug
+
+block head 
+        link(rel="stylesheet", href="style/home.css")
+        title ImagePlaySite | Home
+        meta(name="description", content="On ImagePlaySite You can found various tools which can be used to manipulate images, pdf - Free Service")
+        meta(name="keywords", content="ImagePlaySite, image tools, image to pdf, resize image, pdf compress, compress image, pdf to image, pdf merge, convert image to black and white")
+        link(rel="canonical", href="https://imageplaysite.com/")
+        meta(name="og:title", content="ImagePlaySite | Home")
+        meta(name="og:description", content="On ImagePlaySite You can found various tools which can be used to manipulate images, pdf - Free Service")
+        meta(name="og:image", content="https://imageplaysite.com/images/favicon.png")
+        meta(name="og:type", content="website")
+        meta(name="og:url", content="https://imageplaysite.com/")
+
+block content 
+    main 
+        section(class="site-intro")
+            p Welcome To ImagePlaySite
+            h2 ImagePlaysite has various tools that you use to manipulate your image and pdf.
+            h1 Imageplaysite can be used to change image format, convert Image to Grayscale, Resize image width and height, compress image, crop image in different shapes, convert image to PDF - FREE SERVICE.
+        
+        hr
+
+        section(class="site-about")
+            h2 Main Features 
+            ul(class="ul-ab")
+                li free to use
+                li easy to use
+                li Convenience can access this online service from your PC or mobile anytime and anywhere.
+                li Uploaded data is deleted within an hour.
+                li no need to create account to use.
+
+
+        hr
+
+        section(class="site-intro services")
+            h2 Tools
+            div(class="services-con")
+                div(class="services-box-con")
+
+                    a(href="/change-image-format-to-jpg-png-bmp-tiff-gif")
+                        div(class="image_format") 
+                            p
+                                h2 Change IMAGE Format
+                            img(src="/images/image_format.png", alt="change fomrat")
+
+                    a(href="/change-format-and-resize-image-width-height")
+                        div 
+                            p 
+                                h2 RESIZE IMAGE
+                            img(src="/images/width_and_height.png", alt="resize image")
+
+
+                    a(href="/convert-image-to-black-and-white")
+                        div 
+                            p 
+                                h2
+                                    span COLOR 
+                                    | to 
+                                    span BLACK and WHITE
+                            img(src="/images/jpg_format.png", alt="color to black and white")
+
+
+                    a(href="/compress-image-online")
+                        div(class="image_format") 
+                            p 
+                                h2 Compress Image
+                            img(src="/images/img_compress.png", alt="compress image")  
+
+                    a(href="/crop-image-with-different-shapes-star-rectangle-circle-square-triangle-diamond-online")
+                        div
+                            p 
+                                h2 IMAGE CROP
+                            img(src="/images/crop_img.png", alt="crop image")        
+
+                    a(href="/convert-image-to-pdf-in-A4-A5-A6-A7-sizes")
+                        div(class="image_format") 
+                            p
+                                h2
+                                    span IMAGE 
+                                    | to 
+                                    span PDF
+                            img(src="/images/img_to_pdf.png", alt="image to pdf")
+
+
+
+        
