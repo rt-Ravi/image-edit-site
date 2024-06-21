@@ -6,8 +6,7 @@ const fileUpload = require("express-fileupload");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 const app = express();
-const host = "159.89.233.147";
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 const static_foldfer = path.join(__dirname, "../public");
 const template_folder = path.join(__dirname, "../pages");
@@ -42,7 +41,7 @@ app.use(
 );
 app.use(require("../router/express_router"));
 
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log("server running");
 });
 
